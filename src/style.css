@@ -40,7 +40,7 @@ ul {
 }
 
 li {
-  @apply odd:text-right rounded-xl border-2 border-solid border-white hover:pt-64 bg-white/10 transition-all duration-500 bg-cover bg-center hover:pt-64;
+  @apply odd:text-right rounded-xl border-14 border-solid border-white hover:pt-64 bg-white/10 transition-all duration-500 bg-cover bg-center hover:pt-64;
 }
 
 p {
@@ -90,13 +90,12 @@ ul li:nth-child(10) {
 
 /* h3 - card heading */
 li h3 {
-  @apply px-6 pt-20 m-0 drop-shadow-[0_3px_3px_rgba(0,0,0,0.5)];
+  @apply m-0 drop-shadow-[0_3px_3px_rgba(0,0,0,0.5)] px-6 pt-20 ;
 }
 
 /* p - card desc */
 li p {
-  @apply p-6 m-0 drop-shadow-[0_3px_3px_rgba(0,0,0,0.5)];
-  @apply rounded-b-xl bg-gradient-to-b from-transparent via-sky-700/80 to-blue-900/90 m-0;
+  @apply m-0 drop-shadow-[0_3px_3px_rgba(0,0,0,0.5)] p-6 bg-gradient-to-b from-transparent via-sky-700/80 to-blue-900/90;
 }
 
 @media (prefers-reduced-motion) {
