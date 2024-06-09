@@ -5,4 +5,9 @@ export default defineConfig({
     filesystem: ["src/*.{html,js,ts,jsx,tsx,vue,svelte,astro}"],
   },
   presets: [presetUno()],
+  theme: {
+    fontFamily: {
+      seaweed: ["Seaweed Script", "cursive"],
+    },
+  },
 });
