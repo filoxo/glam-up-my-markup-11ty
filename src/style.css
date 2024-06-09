@@ -44,3 +44,62 @@ li {
 p {
   @apply mt-0 mb-2;
 }
+
+/* li - cards */
+ul li:nth-child(1) {
+  background-image: url(/img/1-sean-oulashin-KMn4VEeEPR8-unsplash.jpg);
+}
+
+ul li:nth-child(2) {
+  background-image: url(/img/2-turks-203161_640.jpg);
+}
+
+ul li:nth-child(3) {
+  background-image: url(/img/3-512px-Baía_do_Sancho_-_Fernando_de_Noronha.png)
+}
+
+ul li:nth-child(4) {
+  background-image: url("/img/4-512px-Shipwreck_at_Navagio_Beach_Zakynthos_Greece_(45557496695).jpg")
+}
+
+ul li:nth-child(5) {
+  background-image: url("/img/5-512px-Playa_Paraíso,_Tulum,_México_-_panoramio.jpg")
+}
+
+ul li:nth-child(6) {
+  background-image: url("/img/6-512px-Anse_Source_d'Argent_2-La_Digue.jpg")
+}
+
+ul li:nth-child(7) {
+  background-image: url("/img/7-beach-4047678_640.jpg")
+}
+
+ul li:nth-child(8) {
+  background-image: url("/img/8-512px-Borabora3.jpg")
+}
+
+ul li:nth-child(9) {
+  background-image: url("/img/9-512px-Lanikai_Beach_(53312031882).jpg")
+}
+
+ul li:nth-child(10) {
+  background-image: url("/img/10-512px-Pink_Sands_Beach_,_Harbour_Island_(4240568842).jpg")
+}
+
+/* h3 - card heading */
+li h3 {
+  @apply px-6 pt-20 m-0 drop-shadow-[0_3px_3px_rgba(0,0,0,0.5)];
+}
+
+/* p - card desc */
+li p {
+  @apply p-6 m-0 drop-shadow-[0_3px_3px_rgba(0,0,0,0.5)];
+  @apply rounded-b-xl bg-gradient-to-b from-transparent via-sky-700/80 to-blue-900/90 m-0;
+}
+
+@media (prefers-reduced-motion) {
+  /* reduce card movement on hover */
+  li {
+    @apply pt-55;
+  }
+}
