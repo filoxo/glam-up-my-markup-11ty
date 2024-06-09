@@ -5,7 +5,7 @@ const htmlminifier = require("html-minifier-terser");
 const IS_PROD = process.env.NODE_ENV === "production";
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/static");
+  eleventyConfig.addPassthroughCopy("src/**/*.{css,svg,jpg,jpeg,webp,png}");
   eleventyConfig.addPlugin(PostCSSPlugin);
   eleventyConfig.addTransform("htmlminifier", (content, outputPath) => {
     if (!outputPath.endsWith(".html")) return content;
