@@ -1,1 +1,46 @@
 @unocss;
+
+/* 
+DIY classless theme
+compose tailwind/unocss classes into normal html selectors to create your own classless theme.
+powerful if you know semantic html, accessibility, and good design principles.
+*/
+html {
+  @apply m-0 bg-gradient-to-bl from-blue-600 to-blue-900;
+}
+
+body {
+  @apply m-0 bg-[url(/formal-invitation.svg)] py-16 px-4 c-white font-sans text-xl leading-8;
+}
+
+body > * {
+  @apply max-w-2xl mx-auto px-4;
+}
+
+main {
+  @apply space-y-14;
+}
+
+h1 {
+  @apply text-center mt-0 mb-12;
+}
+
+h2 {
+  @apply text-center mt-0 mb-10;
+}
+
+h3 {
+  @apply mt-0 mb-8;
+}
+
+ul {
+  @apply list-none p-0 space-y-14;
+}
+
+li {
+  @apply odd:text-right rounded-xl border-2 border-solid border-white hover:pt-64 bg-white/10 transition-all duration-500 bg-cover bg-center hover:pt-64;
+}
+
+p {
+  @apply mt-0 mb-2;
+}
